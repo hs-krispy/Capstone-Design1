@@ -34,11 +34,11 @@ for img_name in img_list:
     width = max_x - min_x
     hight = max_y - min_y
 
-    mask = cv2.resize(mask, dsize=(width, hight), interpolation=cv2.INTER_LINEAR)
+    resized_mask = cv2.resize(mask, dsize=(width, hight), interpolation=cv2.INTER_LINEAR)
     for i in range(width):
         for j in range(hight):
-            if sum(mask[j,i]) <= 300:
+            if sum(resized_mask[j,i]) <= 300:
                 continue
             else:
-                face[min_y + j, min_x + i] = mask[j, i]
+                face[min_y + j, min_x + i] = resized_mask[j, i]
     cv2.imwrite(save_path, face)
