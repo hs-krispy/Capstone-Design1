@@ -3,7 +3,7 @@ import find_face
 import use_model
 from keras.models import load_model
 
-white_model = load_model('white_mask.h5')
+white_model = load_model('black_mask.h5')
 capture = cv2.VideoCapture(0)
 
 while True:
@@ -16,14 +16,17 @@ while True:
         if cv2.waitKey(1) > 0:
             break
     pred = use_model.predict_mask(white_model)
+
     print(pred)
     if pred == 1:
         print("pass")
+
+
+
     elif pred == 0:
         print('please wear a mask')
 
-    else:
-        print('aa')
+
 
     print("find face please enter next person")
 
