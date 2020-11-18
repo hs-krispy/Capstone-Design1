@@ -28,6 +28,8 @@ while True:
     if pred == 0:
         start_time = time.time()
         while True:
+            ret, frame = capture.read()
+            cv2.imshow("VideoFrame", frame)
             if time.time() - start_time > 5:
                 print("[INFO] sending txt message")
                 tn.send("someone don't wear a mask")
