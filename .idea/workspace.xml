@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b32cc05c-ba45-4309-bccd-e83d0c95a0f0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/alert.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jgaPUOywy15NnxuODE8SWR10ul" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.alert">
+    <configuration name="alert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Capstone-Design1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="use_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Capstone-Design1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspberry" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/raspberry/use_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.alert" />
+        <item itemvalue="Python.use_model" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b32cc05c-ba45-4309-bccd-e83d0c95a0f0" name="Default Changelist" comment="" />
+      <created>1604228164130</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604228164130</updated>
+      <workItem from="1604228165537" duration="1274000" />
+      <workItem from="1605511331182" duration="1376000" />
+      <workItem from="1605587863114" duration="820000" />
+      <workItem from="1605680505363" duration="7000" />
+      <workItem from="1605680612718" duration="274000" />
+      <workItem from="1605681211762" duration="847000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605588372441">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605588372441" />
+    <state width="1398" height="171" key="GridCell.Tab.0.bottom" timestamp="1605682266211">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="171" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605682266211" />
+    <state width="1398" height="171" key="GridCell.Tab.0.center" timestamp="1605682266210">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="171" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605682266210" />
+    <state width="1398" height="171" key="GridCell.Tab.0.left" timestamp="1605682266209">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="171" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605682266209" />
+    <state width="1398" height="171" key="GridCell.Tab.0.right" timestamp="1605682266211">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="171" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605682266211" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1605681621591">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605681621591" />
+    <state x="362" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1605681211878">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="362" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1605681211878" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605681611627">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605681611627" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Capstone_Design1$use_model.coverage" NAME="use_model Coverage Results" MODIFIED="1604228185787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/raspberry" />
+    <SUITE FILE_PATH="coverage/Capstone_Design1$alert.coverage" NAME="alert Coverage Results" MODIFIED="1605682266195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

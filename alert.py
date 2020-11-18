@@ -30,18 +30,17 @@ while True:
         while True:
             ret, frame = capture.read()
             cv2.imshow("VideoFrame", frame)
+            find = find_face.img_processing('./sv_img/face.jpg', frame)
+            pred = use_model.predict_mask(model)
+
+            if pred != 0:
+                break
+
             if time.time() - start_time > 5:
                 print("[INFO] sending txt message")
                 tn.send("someone don't wear a mask")
                 print("[INFO] txt message sent")
                 break
-        # while time.time() - start_time < 5:
-        #     ret, frame = capture.read()
-        #     cv2.imshow("VideoFrame", frame)
-        #     if cv2.waitKey(1) > 0:
-        #         break
-            # 여기에 테스트 배드 코드
-
 
 capture.release()
 cv2.destroyAllWindows()
