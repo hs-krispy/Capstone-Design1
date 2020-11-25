@@ -1,36 +1,50 @@
 import cv2
 import find_face
 import use_model
-from keras.models import load_model
+from imutils.video import VideoStream
+from tensorflow.keras.models import load_model
+import time
+import serial
 
-white_model = load_model('white_mask.h5')
-capture = cv2.VideoCapture(0)
+ser = serial.Serial('/dev/ttyACM0', 9600)
+model = load_model('final_mask.h5')
+capture = VideoStream(usePiCamera=True, resolution=(640, 480)).start()
+time.sleep(2.0)
 
 while True:
     find = False
-    while not find:
-        ret, frame = capture.read()
-        cv2.imshow("VideoFrame", frame)
-        find = find_face.img_processing('./sv_img/face.jpg', frame)
-
-        if cv2.waitKey(1) > 0:
-            break
-    pred = use_model.predict_mask(white_model)
-    print(pred)
-    if pred == 1:
-        print("pass")
-    elif pred == 0:
-        print('please wear a mask')
-
-    else:
-        print('aa')
-
-    print("find face please enter next person")
-
-    sig = input()
-    if sig == 'exit':
+    frame = capture.read()
+    cv2.imshow("VideoFrame", frame)
+    find = find_face.img_processing('./sv_img/face.jpg', frame)
+    if cv2.waitKey(1) > 0:
         break
 
+    if not find:
+        continue
+
+    pred = use_model.predict_mask(model)
+    if pred == 1:
+        print("pass")
+        c = 'y'
+        c = c.encode('utf-8')
+        ser.write(c)
+        while True:
+            if ser.readable():
+                res = ser.readline()
+                print(res.decode()[:len(res) - 1])
+            break
+
+    else:
+        print('please wear a mask')
+
+    start_time = time.time()
+
+    while time.time() - start_time < 5:
+        frame = capture.read()
+        cv2.imshow("VideoFrame", frame)
+        if cv2.waitKey(1) > 0:
+            break
 
 capture.release()
+
 cv2.destroyAllWindows()
