@@ -41,6 +41,7 @@ while True:
 
     while time.time() - start_time < 5:
         frame = capture.read()
+        cv2.putText(frame, res.decode()[:len(res) - 1], (0, 100), cv2.FONT_HERSHEY_SCRIPT_SIMPLEX, 1, (0, 255, 0))
         cv2.imshow("VideoFrame", frame)
         if cv2.waitKey(1) > 0:
             break
