@@ -41,6 +41,11 @@ while True:
 
     while time.time() - start_time < 5:
         frame = capture.read()
+        if pred == 1:
+            cv2.putText(frame, "PASS", (200, 480), cv2.FONT_HERSHEY_TRIPLEX, 1, (255, 0, 0), 10)
+        else:
+            cv2.putText(frame, "Please wear a mask", (100, 480), cv2.FONT_HERSHEY_TRIPLEX, 1, (0, 0, 255), 10)
+        cv2.putText(frame, res.decode()[:len(res) - 1], (0, 100), cv2.FONT_HERSHEY_TRIPLEX, 1, (0, 255, 0), 10)
         cv2.imshow("VideoFrame", frame)
         if cv2.waitKey(1) > 0:
             break
