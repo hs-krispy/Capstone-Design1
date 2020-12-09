@@ -7,7 +7,7 @@
 
 
 
-#### [얼굴 데이터 제공 (generated photos)](https://generated.photos/)
+#### [얼굴 데이터 제공  -  generated photos](https://generated.photos/)
 
 ### make_maskimg
 
@@ -25,4 +25,15 @@
 
 - 모델 학습을 위해 이미지 파일을 npy 파일로 변환하고 레이블을 지정 **(1 - 마스크 착용, 0 - 마스크 미착용)**
 - CNN을 통해 모델을 학습시키고 성능을 테스팅
+
+
+
+### 실행에 필요한 설치파일
+
+- res10_300x300_ssd_iter_140000.caffemodel : 프레임에 잡히는 이미지에서 사람의 얼굴을 인식하는 모델
+- deploy.prototxt : res10_300x300_ssd_iter_140000.caffemodel에 대한 파라미터
+- serial - 아두이노와 시리얼 통신을 하는데 필요한 라이브러리
+- tensorflow, keras, cv2 - 이미지 처리와 모델 학습에 필요한 라이브러리
+- twilio - 알람 기능을 위해 필요한 라이브러리  
+- Arduino IDE : arduino에서 스텝 모터와 온도 센서를 제어하기 위한 코딩을 하는 환경 
 
